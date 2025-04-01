@@ -5,7 +5,7 @@ const app = express()
 app.use(
   '/proxy-stream',
   createProxyMiddleware({
-    target: 'http://kdhx-ice.streamguys1.com/live',
+    target: 'http://kdhx-ice.streamguys1.com',
     changeOrigin: true,
     pathRewrite: {
       '^/proxy-stream': '/live',
